@@ -16,7 +16,7 @@ python3 part2.py
 The aim of the algorithm is to create a machine learning model to perform a sentiment analysis on IMDb reviews. The classification is either a review being positive (1) or negative (0).
 The three features that will be used are:
 1. Word frequency
-2. Phrases built with two words frequency (ngrams)
+2. Frequency of phrases built with two words (ngrams)
 3. Word count of text
 
 # Comments
@@ -26,24 +26,24 @@ pandas, numpy, nltk, sklearn.
 # Documentation
 Large Movie Review Dataset v1.0
 
-Overview
+### Overview
 
 This dataset contains movie reviews along with their associated binary
 sentiment polarity labels. It is intended to serve as a benchmark for
 sentiment classification. This document outlines how the dataset was
 gathered, and how to use the files provided. 
 
-Dataset 
+### Dataset 
 
 The core dataset contains 25,000 reviews split into train, development
 and test sets. The overall distribution of labels is roughly balanced.
 
-Files
+### Files
 
 Each folder contains files with negative (neg) and positive (reviews).
 One review per line.
 
-Reference paper
+### Reference paper
 
 @InProceedings{maas-EtAl:2011:ACL-HLT2011,
   author    = {Maas, Andrew L.  and  Daly, Raymond E.  and  Pham, Peter T.  and  Huang, Dan  and  Ng, Andrew Y.  and  Potts, Christopher},
