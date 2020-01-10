@@ -22,7 +22,7 @@ The three features that will be used are:
 The algorithm will then decide the best number of features by predicting the outcome of the development dataset and for this number it will show metrics on how good the model predicts the test dataset.
 
 # Comments
-1. To run this code, python 3.6 or above must be intalled in the system, along with some basic packages such as:
+1. To run this code, python 3 must be intalled in the system, along with some basic packages such as:
 pandas, numpy, nltk, sklearn.
 
 # Documentation
