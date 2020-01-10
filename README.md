@@ -5,10 +5,10 @@ This is a GitHub repository for Part 2 of the first assignment of the lecture Ap
 # Instructions on how to run code from terminal:
 1. Download all the files from the repository
 2. In order for the code to run successfully, the folders must remain as they are when downloaded
-3. Open a terminal in the folder where the file part2.py is
+3. Open a terminal in the folder where the file part2code_c1961726.py is
 4. Run the command:
 ```
-python3 part2.py
+python3 part2code_c1961726.py
 ```
 5. If all the necessary packages are installed the code must run successfully and analytical information will be available in the terminal window regarding the flow of the algorithm.
 
