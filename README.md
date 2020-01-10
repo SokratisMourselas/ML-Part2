@@ -26,6 +26,11 @@ The algorithm will then decide the best number of features by predicting the out
 pandas, numpy, nltk, sklearn.
 
 # Documentation
+
+Part of the code used in the algorithm has been provided by Cardiff University for the lecture Applied Machine Learning and it has been modified to be applied to this question.
+
+## Documetation for the dataset
+
 Large Movie Review Dataset v1.0
 
 ### Overview
