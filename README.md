@@ -10,7 +10,7 @@ This is a GitHub repository for Part 2 of the first assignment of the lecture Ap
 ```
 python3 part2.py
 ```
-5. If all the packages are installed the code must run succesfully and analytical information will be available in the terminal window regarding the flow of the algorithm.
+5. If all the packages are installed the code must run successfully and analytical information will be available in the terminal window regarding the flow of the algorithm.
 
 # Functionalities/Parameters:
 The aim of the algorithm is to create a machine learning model to perform a sentiment analysis on IMDb reviews. The classification is either a review being positive (1) or negative (0).
