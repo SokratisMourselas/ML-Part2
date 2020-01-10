@@ -10,7 +10,6 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import confusion_matrix
 
 
-print("\nSTARTED: Importing the training, development and test dataset of IMDb reviews")
 dataset_file_neg = pd.read_csv('./IMDb/train/imdb_train_neg.txt', sep='\n', header=None)
 dataset_file_pos = pd.read_csv('./IMDb/train/imdb_train_pos.txt', sep='\n', header=None)
 dataset_file_neg = np.ravel(dataset_file_neg)
@@ -44,18 +43,17 @@ for pos_review in dataset_file_pos:
 for neg_review in dataset_file_neg:
     test_dataset.append((neg_review, 0))
 
-print("COMPLETED: Importing the training, development and test dataset of IMDb reviews")
+print("DONE: Importing the training, development and test dataset of IMDb reviews")
 
-print("\nSize training set: " + str(len(train_dataset)))
-print("Size dev set: " + str(len(dev_dataset)))
-print("Size test set: " + str(len(test_dataset)))
+print("\nTraining set size: " + str(len(train_dataset)))
+print("Development set size: " + str(len(dev_dataset)))
+print("Test set size: " + str(len(test_dataset)))
 
 # Shuffling the three dataset
 random.shuffle(train_dataset)
 random.shuffle(dev_dataset)
 random.shuffle(test_dataset)
 
-print("\nSetting a list of stopwords to prevent false recognition of words or patterns\n")
 lemmatizer = nltk.stem.WordNetLemmatizer()
 stopwords = set(nltk.corpus.stopwords.words('english'))
 stopwords.add(".")
@@ -73,6 +71,7 @@ stopwords.add("br")
 stopwords.add("(")
 stopwords.add(")")
 stopwords.add("''")
+print("\nDONE: Setting a list of stopwords to prevent false recognition of words or patterns\n")
 
 
 def get_list_tokens(string):
@@ -143,7 +142,7 @@ for instance in dev_dataset:
 Y_dev_gold = np.asarray(Y_dev)
 
 print("STARTED: Feature Selection Process")
-print("The goal of this part of the algorithm is to select the best number\n"
+print("\nThe goal of this part of the algorithm is to select the best number\n"
       "of features for the machine learning model.\n"
       "Please allow some time for the process to finish...\n")
 
@@ -198,7 +197,7 @@ Y_test_predictions = log_reg.predict(X_test)
 
 print("\nResults of classification report\n")
 print(classification_report(Y_test_gold, Y_test_predictions))
-print("\nConfusion Matrix\n")
+print("\nConfusion Matrix")
 print(confusion_matrix(Y_test_gold, Y_test_predictions))
 
 precision = precision_score(Y_test_gold, Y_test_predictions, average='macro')
